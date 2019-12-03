@@ -28,6 +28,7 @@
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
+    "jest": "^24.9.0",
     "nodemon": "^2.0.1",
     "sucrase": "^3.10.1"
   }
