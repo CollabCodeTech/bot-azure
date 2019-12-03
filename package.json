@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
+    "test": "TEST_REPORT_FILENAME=TEST-JEST.xml jest",
     "build": "sucrase ./src -d ./dist --transforms imports"
   },
   "repository": {
@@ -28,8 +29,16 @@
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
+    "@sucrase/jest-plugin": "^2.0.0",
     "jest": "^24.9.0",
+    "jest-junit-reporter": "^1.1.0",
     "nodemon": "^2.0.1",
     "sucrase": "^3.10.1"
+  },
+  "jest": {
+    "transform": {
+      ".(js|jsx|ts|tsx)": "@sucrase/jest-plugin"
+    },
+    "testResultsProcessor": "./node_modules/jest-junit-reporter"
   }
 }
