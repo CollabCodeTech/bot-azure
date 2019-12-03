@@ -19,4 +19,9 @@ steps:
     npm install
     npm test
     npm run build
-  displayName: 'npm install and build'
+  displayName: 'npm install, test and build'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
