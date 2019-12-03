@@ -10,11 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/CollabCodeTech/bot-azure.git"
   },
-  "keywords": ["bot", "discord", "discord.js", "azure"],
+  "keywords": [
+    "bot",
+    "discord",
+    "discord.js",
+    "azure"
+  ],
   "author": "CollabCode",
   "license": "MPL-2.0",
   "bugs": {
     "url": "https://github.com/CollabCodeTech/bot-azure/issues"
   },
-  "homepage": "https://github.com/CollabCodeTech/bot-azure#readme"
+  "homepage": "https://github.com/CollabCodeTech/bot-azure#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  },
+  "devDependencies": {}
 }
